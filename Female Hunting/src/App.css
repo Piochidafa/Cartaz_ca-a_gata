@@ -1,0 +1,83 @@
+
+
+@font-face {
+  font-family: 'mines';
+  src: url(./assets/Monocraft.otf);
+}
+
+@keyframes rodaCresce {
+
+
+  from{transform: rotate(0deg)scale(-200px);}
+
+  to{transform: rotate(360deg)scale(0);}
+}
+
+
+
+.container{
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+.caixinha{
+  
+  animation: rodaCresce 1.5s  ease-in-out reverse ;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 45vw;
+  background-image: url('./assets/paper-1074132_1280.jpg');
+  background-repeat: round;
+  border-radius: 3px;
+
+
+}
+
+.Infocartaz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Infocartaz span{
+    font-size: 10vh;
+    font-family: mines;
+    font-weight: bold;
+
+  }
+  #pp{
+  font-size: 4vh;
+  font-weight: normal;
+  }
+
+  #name{
+    font-size: 7vh;
+    font-weight: normal;
+  }
+  #monetario{
+    font-size: 6vh;
+    font-weight: normal;
+  }
+  #assinatura{
+    font-size: 3vh;
+
+  }
+
+.image{
+
+  transform: scale(0.9);
+}
+
+.image img{
+
+  height: 50vh;
+  width: 38vw;
+  border-radius: 10px;
+
+}
